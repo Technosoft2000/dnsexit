@@ -7,7 +7,7 @@ version: '2'
 services:
 
   dnsexit:
-    image: dnsexit
+    image: technosoft2000/dnsexit
     container_name: dnsexit
     volumes:
       - /etc/localtime:/etc/localtime:ro
@@ -15,7 +15,6 @@ services:
       - LOGIN=mylogin
       - PASSWORD=mypassword
       - HOST=host.domain.com
-      - INTERVAL=600
+      - INTERVAL=6000
     restart: always
-
 ```
