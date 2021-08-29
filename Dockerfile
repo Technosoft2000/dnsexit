@@ -1,4 +1,4 @@
-FROM alpine:3.2
+FROM alpine:3.14
 MAINTAINER NOSPAM <nospam@nnn.nnn>
 
 RUN apk add --update curl bash && rm -rf /var/cache/apk/*
